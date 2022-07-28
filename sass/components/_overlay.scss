@@ -1,0 +1,32 @@
+.portfolio-overlay {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.portfolio-desc {
+    transform: translateY(100%);
+
+    transition-timing-function: ease-in-out;
+    transition-duration: var(--duration-time);
+
+    position: absolute;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--main-txt-dark);
+    background-color: rgba(33, 150, 243, 0.9);
+    text-align: left;
+
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+
+    .card-img:hover & {
+        transform: translateY(0);
+        }
+}

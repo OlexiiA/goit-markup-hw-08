@@ -1,0 +1,135 @@
+/* Icons */
+
+.team__social {
+    display: flex;
+    justify-content: center;
+}
+
+.social-team-list:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-team-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--fill-color);
+
+    transition-property: fill, background-color;
+    transition-duration: var(--duration-time);
+    transition-timing-function: var(--time-allocation);
+    
+&:hover,
+&:focus {
+        background-color: var(--accent-color);
+        fill: var(--main-txt-dark);
+    }
+}
+
+/* Footer-social-link */
+
+.footer-section {
+    
+    gap: 60px;
+    @media screen and (min-width: 1200px) {
+            display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+                gap: 0;
+        }
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+    color: var(--main-txt-dark);
+
+    @media screen and (min-width: 768px) {
+                margin: 0px;
+        }
+
+    @media screen and (min-width: 1200px) {
+            align-items: flex-start;
+        }
+}
+
+.footer-social-send {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    color: var(--main-txt-dark);
+
+    @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+            align-items: baseline;
+        }
+}
+
+.join {
+    font-family: var(--main-font), "sans-serif";
+    font-style: normal;
+    font-size: 14px;
+    padding-bottom: 20px;
+    
+
+    @media screen and (min-width: 1200px) {
+            padding-top: 10px;
+        }
+}
+
+.footer-list-link {
+    display: flex;
+
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+        padding-right: 10px;
+        }
+}
+
+
+
+.link-footer {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #44454e;
+    fill: var(--main-txt-dark);
+
+    transition-property: background-color;
+    transition-duration: var(--duration-time);
+    transition-timing-function: var(--time-allocation);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        }
+}
+
+.form-footer {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        @media screen and (min-width: 1200px) {
+                display: flex;
+                align-items: baseline;
+                flex-direction: initial;
+            }
+
+}
+
+        

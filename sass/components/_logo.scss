@@ -1,0 +1,28 @@
+.logo {
+    font-style: normal;
+    font-family: var(--secondary-font), "sans-serif";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    color: var(--accent-color);
+    letter-spacing: 0.03em;
+
+    
+    @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            line-height: 1.19;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+}
+
+.span-studio {
+    color: #000000;
+}
+
+.logo-footer {
+    margin-bottom: 20px;
+}
+.logo-span {
+    color: var(--main-txt-dark);
+}

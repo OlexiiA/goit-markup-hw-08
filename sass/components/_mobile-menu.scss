@@ -1,0 +1,136 @@
+.mobile-menu-btn {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+
+z-index: 30;
+
+margin-left: auto;
+padding: 0;
+border: none;
+background-color: transparent;
+
+    &.is-open .mobile-menu__close {
+            display: block;
+        }
+
+    &.is-open .mobile-menu__burger {
+            display: none;
+        }
+
+    @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+
+.mobile-menu__close {
+   display: none;
+}
+
+
+.mobile-menu {
+z-index: 10;       
+display: none;
+    
+&.is-open {
+position: fixed;
+background-color: var(--main-txt-dark);
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+    
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+font-weight: 500;
+letter-spacing: 0.02em;
+    
+padding: 48px 40px;
+    }
+}
+
+// Оформление
+.mobile-nav {
+list-style: none;
+margin-bottom: auto;
+font-weight: 500;
+font-size: 40px;
+line-height: calc(47 / 40);
+letter-spacing: 0.02em;
+color: var(--main-txt-light);
+
+}
+.mobile-nav__item:not(:last-child) {
+    padding-bottom: 32px;
+}
+
+.mobile-link {
+    color: var(--main-txt-light);
+}
+
+.mobile-link-portfolio {
+    color: var(--main-txt-light);
+}
+
+.mobile-carrent {
+    color: var(--accent-color);
+}
+
+
+
+.mobile-contact {
+    margin-bottom: 64px;
+    list-style: none;
+}
+
+.mobile-phone__item {
+    font-size: 34px;
+    line-height: calc(42 / 34);
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+}
+
+.mobile-phone-link {
+    color: var(--accent-color);
+}
+
+.mobile-mail__item {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.02em;
+    
+}
+
+.mobile-mail-link {
+color: var(--p-color);
+}
+
+.mobile-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    list-style: none;
+    
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+       
+}
+
+.mobile-social__item:not(:last-child) .mobile-social-link {
+padding-right: 10px;
+border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-link-color {
+color: var(--accent-color);
+}
+
+
+

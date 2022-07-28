@@ -1,0 +1,60 @@
+.header-list {
+    @media screen and (min-width: 768px) {
+            display: flex;
+            margin-left: 88px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+    }
+    
+    &-item:not(:last-child) {
+        @media screen and (min-width: 768px) {
+            margin-right: 50px;
+    }
+    }
+}
+
+.header-container {
+    
+    display: flex;
+    align-items: center;
+}
+
+.header-group {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: auto;}
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: inherit;
+        gap: 0;
+    }
+}
+
+.header-link {
+    @media screen and (min-width: 768px) {
+            display: block;
+                padding-top: 32px;
+                padding-bottom: 32px;
+            
+                font-weight: 500;
+                text-align: center;
+                font-size: 14px;
+                line-height: 1.14;
+                color: var(--main-txt-light);
+            
+                transition-property: color;
+                transition-duration: var(--duration-time);
+                transition-timing-function: var(--time-allocation);
+            
+                &:hover,
+                &:focus {
+                        color: var(--accent-color);
+                    }
+        }
+    
+}
+

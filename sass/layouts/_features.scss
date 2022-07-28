@@ -1,0 +1,104 @@
+/* Особенности WebStudio */
+
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.features__block {
+    display: flex;
+}
+
+.features__list {
+    padding: 0px;
+    @media screen and (min-width: 768px) {
+           display: flex;
+           flex-wrap: wrap;
+           gap: 30px;
+        }
+@media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+}
+}
+
+.features__card {
+    margin-bottom: 30px;
+    width: 100%;
+
+    &:last-child {
+            padding-right: 0px;
+        }
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 30px)/2);
+        }
+                       
+}
+
+.features__title {
+    margin-bottom: 10px;
+    font-family: var(--main-font), "sans-serif";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-txt-light);
+    
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+            text-align: left;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
+}
+
+.features__text {
+    font-family: var(--main-font), "sans-serif";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--p-color);
+
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+            margin-bottom: 0px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 16px;
+        }
+}
+
+.features__svg {
+    
+    background-color: #f5f4fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+          width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+}

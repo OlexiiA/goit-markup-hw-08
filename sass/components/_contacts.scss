@@ -1,0 +1,92 @@
+/* Contacts WebStudio */
+
+.header-mail:hover,
+.header-mail:focus {
+    @media screen and (min-width: 768px) {
+            color: var(--accent-color);
+        }
+    
+}
+
+.header-contact:hover,
+.header-contact:focus {
+    @media screen and (min-width: 1200px) {
+            color: var(--accent-color);
+        }    
+}
+
+.header-mail,
+.header-contact,
+.portfolio-contact {
+    @media screen and (min-width: 768px) {
+        font-family: var(--main-font), "sans-serif";
+            list-style: none;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: calc(14 / 12);
+            letter-spacing: 0.02em;
+            color: var(--p-color);
+        }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+}
+
+.header-contact,
+.header-mail {
+
+    @media screen and (min-width: 1200px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+    
+    transition-property: color;
+    transition-duration: var(--duration-time);
+    transition-timing-function: var(--time-allocation);
+}
+
+.header-contact {
+    @media screen and (min-width: 1200px) {
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                margin-left: 50px;
+        }
+}
+
+.mail-phone-link {
+    fill: var(--p-color);
+    display: flex;
+    align-items: center;
+
+    transition-property: fill;
+    transition-duration: var(--duration-time);
+    transition-timing-function: var(--time-allocation);
+}
+
+.mail-phone-link:hover,
+.mail-phone-link:focus {
+    fill: var(--accent-color);
+}
+
+.svg-mail-phone {
+    @media screen and (min-width: 768px) {
+            margin-right: 8px;
+        }
+                @media screen and (min-width: 1200px) {
+                    margin-right: 10px;
+                }
+}
+
+/* Portfolio-contact */
+.portfolio-contact {
+    text-shadow: none;
+
+    transition-property: color;
+    transition-duration: var(--duration-time);
+    transition-timing-function: var(--time-allocation);
+}
+
+.portfolio-contact:hover,
+.portfolio-contact:focus {
+    color: var(--accent-color);
+}

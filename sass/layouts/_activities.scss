@@ -1,0 +1,55 @@
+/* Деятельность WebStudio */
+
+.activities {
+    padding-bottom: 94px;
+    display: none;
+        @media screen and (min-width: 1200px) {
+            display: contents;}
+}
+
+.activities__title {
+    margin-bottom: 50px;
+
+    font-family: var(--main-font), "sans-serif";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-light);
+}
+
+.activities__list {
+    display: flex;
+    padding: 0px;
+}
+
+.activities__item {
+    margin-right: 30px;
+
+    &:last-child {
+            margin-right: 0px;
+        }
+}
+
+.activities__wrapper {
+    position: relative;
+}
+
+.activities__text {
+    position: absolute;
+    bottom: 0;
+    padding: 27px 0;
+
+    width: 370px;
+    height: 70px;
+
+    font-family: var(--main-font), "sans-serif";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    color: var(--main-txt-dark);
+    background-color: rgba(47, 48, 58, 0.8);
+}
